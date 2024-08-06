@@ -1,0 +1,35 @@
+{
+  "name": "monorepo-package-graph",
+  "version": "0.0.5",
+  "description": "Generates a CLI graph of the interdependencies among packages and apps in a monorepo.",
+  "main": "index.js",
+  "bin": {
+    "monorepo-package-graph": "./index.js",
+    "monopg": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:install": "npm link",
+    "dev:uninstall": "npm unlink monorepo-package-graph"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noizbuster/monorepo-package-graph.git"
+  },
+  "keywords": [
+    "monorepo",
+    "dependencies",
+    "packages",
+    "ref"
+  ],
+  "author": "NoizBuster <noizbuster@noizbuster.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/noizbuster/monorepo-package-graph/issues"
+  },
+  "homepage": "https://github.com/noizbuster/monorepo-package-graph#readme",
+  "dependencies": {
+    "graphlib": "^2.1.8",
+    "yargs": "^17.7.2"
+  }
+}
